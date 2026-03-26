@@ -1,0 +1,187 @@
+{
+    "technologies": [
+        {
+            "name": "Shopify",
+            "html_patterns": [
+                "cdn.shopify.com",
+                "shopify.com",
+                "shopify-payment-button"
+            ],
+            "meta_tags": {
+                "generator": "Shopify"
+            }
+        },
+        {
+            "name": "WordPress",
+            "html_patterns": [
+                "wp-content",
+                "wp-includes"
+            ],
+            "meta_tags": {
+                "generator": "WordPress"
+            }
+        },
+        {
+            "name": "Google Analytics",
+            "html_patterns": [
+                "google-analytics.com/analytics.js",
+                "google-analytics.com/ga.js",
+                "googletagmanager.com/gtm.js"
+            ],
+            "scripts": [
+                "ga.js",
+                "gtm.js"
+            ]
+        },
+        {
+            "name": "Cloudflare",
+            "html_patterns": [
+                "cloudflare.com",
+                "cloudflare-static.com"
+            ],
+            "headers": [
+                "server: cloudflare"
+            ]
+        },
+        {
+            "name": "React",
+            "html_patterns": [
+                "react.production.min.js",
+                "_reactRootContainer",
+                "react-dom"
+            ]
+        },
+        {
+            "name": "Tailwind CSS",
+            "html_patterns": [
+                "tailwind.min.css",
+                "tailwind.css"
+            ]
+        },
+        {
+            "name": "Wix",
+            "html_patterns": [
+                "wix.com",
+                "static.wixstatic.com",
+                "wix-code-sdk"
+            ]
+        },
+        {
+            "name": "Squarespace",
+            "html_patterns": [
+                "static1.squarespace.com",
+                "squarespace-config"
+            ]
+        },
+        {
+            "name": "jQuery",
+            "html_patterns": [
+                "jquery.min.js",
+                "jquery.js",
+                "jquery-migrate"
+            ]
+        },
+        {
+            "name": "Bootstrap",
+            "html_patterns": [
+                "bootstrap.min.css",
+                "bootstrap.min.js",
+                "bootstrap.bundle"
+            ]
+        },
+        {
+            "name": "Google Fonts",
+            "html_patterns": [
+                "fonts.googleapis.com",
+                "fonts.gstatic.com"
+            ]
+        },
+        {
+            "name": "Font Awesome",
+            "html_patterns": [
+                "fontawesome.com",
+                "font-awesome",
+                "fa-solid",
+                "fa-brands"
+            ]
+        },
+        {
+            "name": "Elementor",
+            "html_patterns": [
+                "elementor-container",
+                "elementor-widget",
+                "elementor-main"
+            ]
+        },
+        {
+            "name": "WooCommerce",
+            "html_patterns": [
+                "woocommerce-no-js",
+                "wc-cart-fragments",
+                "woocommerce-layout"
+            ]
+        },
+        {
+            "name": "Facebook Pixel",
+            "html_patterns": [
+                "connect.facebook.net/en_US/fbevents.js",
+                "facebook-jssdk"
+            ]
+        },
+        {
+            "name": "HubSpot",
+            "html_patterns": [
+                "js.hs-scripts.com",
+                "js.hsadspixel.net"
+            ]
+        },
+        {
+            "name": "Mailchimp",
+            "html_patterns": [
+                "chimpstatic.com",
+                "mc-validate.js"
+            ]
+        },
+        {
+            "name": "Yoast SEO",
+            "html_patterns": [
+                "yoast-schema-graph",
+                "Yoast SEO plugin"
+            ]
+        },
+        {
+            "name": "Recaptcha",
+            "html_patterns": [
+                "google.com/recaptcha",
+                "grecaptcha"
+            ]
+        },
+        {
+            "name": "Hotjar",
+            "html_patterns": [
+                "static.hotjar.com",
+                "hj.js"
+            ]
+        },
+        {
+            "name": "Litespeed Server",
+            "headers": [
+                "server: LiteSpeed",
+                "x-litespeed-cache"
+            ]
+        },
+        {
+            "name": "Metadata Information",
+            "html_patterns": [
+                "<meta",
+                "<title"
+            ]
+        },
+        {
+            "name": "Common Scripts",
+            "html_patterns": [
+                "<script"
+            ]
+        }
+    ]
+}
