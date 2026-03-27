@@ -1,9 +1,11 @@
 Project Overview & Personal Journey
+
 I built this project as part of the technical challenge for the Software Engineer Intern position at Veridion. As an aspiring Data Engineer, I chose the Website Technologies Scraper task because I wanted to see if I could build a real "data pipeline" from scratch.
 
 Before I wrote any code, I spent a lot of time researching how websites actually work "under the hood." I had to learn which libraries are best for this job and how to split my code so it doesn't become a mess. It was a journey of watching a lot of YouTube tutorials, reading documentation, and trial-and-error.
 
 How I Built It: Step-by-Step
+
 I decided to divide the project into two main files to keep things organized and easier to follow:
 
 1. Researching "Digital Fingerprints"
@@ -22,6 +24,7 @@ check_for_techs: This function is the "brain." It uses BeautifulSoup4 to look th
 This is where I tied everything together. It reads the Parquet file (I learned this is a special way to store data efficiently), loads my signatures, and starts the loop to visit each website. At the end, it prints a nice summary in the terminal and saves everything in results.json.
 
 The "Aha!" Moment: Learning from My Mistakes
+
 One of the biggest lessons I learned happened when I started testing. At first, my code was only finding 3 technologies for all 200 sites. I was really confused!
 
 The Problem: After a lot of debugging and re-reading my code, I found a classic "beginner mistake": I had a return statement indented incorrectly inside my loop. This caused the script to stop immediately after checking the very first signature, skipping the other 95% of my rules.
@@ -31,6 +34,7 @@ The Fix: I fixed the indentation so the loop could finish checking every signatu
 The Result: My detection count went from 3 to 863 total identifications. It was a great feeling to see the terminal suddenly fill up with results!
 
 Debate Topics: My Thoughts on the Future
+
 a. Current Issues & What I'd Change
 Speed: Right now, the script visits sites one by one. It's a bit slow.
 
@@ -44,6 +48,7 @@ Multiple Workers: Instead of one script, I'd have many "workers" (using tools li
 Saving Bandwidth: I'd tell the browser not to load images or videos, because we only need the code to find the technologies.
 
 c. Finding New Technologies
+
 I'd keep an eye on open-source lists to see when new frameworks come out.
 
 I'd look for "weird" or new patterns in the headers that I haven't seen before.
